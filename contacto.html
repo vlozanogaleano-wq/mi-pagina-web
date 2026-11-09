@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | La fe en Dios</title>
+  <meta name="description" content="Escríbenos para compartir algo o pedir oración. Tu mensaje se guarda en privado.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- header: la cabecera, igual en las tres páginas -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="2.2" />
+          <circle cx="12" cy="5.6" r="1.7" />
+          <circle cx="12" cy="18.4" r="1.7" />
+          <circle cx="5.6" cy="12" r="1.7" />
+          <circle cx="18.4" cy="12" r="1.7" />
+        </svg>
+        <span>La fe en Dios</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reflexion.html">Reflexión</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="cabecera__acciones">
+        <a class="boton boton--linea acciones-escritorio" href="contacto.html">Pedir oración</a>
+        <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-menu-boton>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- section: el bloque del formulario -->
+    <div class="contenedor">
+      <div class="contacto">
+        <div>
+          <p class="ceja">Contacto</p>
+          <h1 class="titulo-contacto">
+            Escríbenos. Aquí hay lugar para tu historia.
+          </h1>
+          <p class="entrada">Este espacio está hecho para que fortalezcas tu fe en Dios. Si quieres compartir algo, pedir oración o darnos tu opinión, este es el lugar.</p>
+
+          <ul class="compromisos">
+            <li class="compromiso">
+              <span class="compromiso__icono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+              <div>
+                <h2>Confidencial</h2>
+                <p>Tu mensaje se guarda en privado. No se publica ni se comparte con terceros.</p>
+              </div>
+            </li>
+
+            <li class="compromiso">
+              <span class="compromiso__icono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </span>
+              <div>
+                <h2>Con calma</h2>
+                <p>Leemos cada mensaje con atención. La respuesta puede tardar unos días.</p>
+              </div>
+            </li>
+
+            <li class="compromiso">
+              <span class="compromiso__icono">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20.8 5.6a5.5 5.5 0 0 0-7.8 0L12 6.6l-1-1a5.5 5.5 0 0 0-7.8 7.8L12 22l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+              </span>
+              <div>
+                <h2>Sin juicio</h2>
+                <p>Puedes escribir desde la duda, el enojo o el cansancio. Aquí hay lugar.</p>
+              </div>
+            </li>
+          </ul>
+
+          <blockquote class="cita-contacto">
+            <p>«Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.»</p>
+            <cite>Mateo 11:28</cite>
+          </blockquote>
+        </div>
+
+        <div>
+          <form class="formulario" id="formulario" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required>
+              <p class="error oculto" id="nombre-error"></p>
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input id="correo" name="correo" type="email" inputmode="email" autocomplete="email" placeholder="tucorreo@ejemplo.com" aria-describedby="correo-ayuda" required>
+              <p class="ayuda" id="correo-ayuda">Solo lo usaremos para responderte.</p>
+              <p class="error oculto" id="correo-error"></p>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje o petición de oración</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe con calma lo que quieras compartir…" maxlength="2000" required></textarea>
+              <p class="error oculto" id="mensaje-error"></p>
+            </div>
+
+            <div class="consentimiento">
+              <input id="privacidad" name="privacidad" type="checkbox">
+              <label for="privacidad">Autorizo que este mensaje se guarde de forma privada para poder leerlo y responder. No se publica ni se comparte.</label>
+            </div>
+            <p class="error oculto" id="privacidad-error"></p>
+
+            <p class="aviso-error oculto" id="aviso-error" role="alert"></p>
+
+            <button class="boton boton--solido boton--grande" type="submit" id="enviar">Enviar mensaje</button>
+
+            <p class="formulario__nota">Si es una urgencia o un riesgo para tu vida, busca ayuda local inmediata.</p>
+          </form>
+
+          <div class="exito oculto" id="exito" role="status" tabindex="-1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="m8.5 12.5 2.5 2.5 4.5-5" />
+            </svg>
+            <h2>Tu mensaje llegó</h2>
+            <p>Gracias por escribir. Lo leeremos con cuidado y en privado. Si pediste oración, la tendremos presente.</p>
+            <button class="boton boton--linea" type="button" id="otro-mensaje">Escribir otro mensaje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer: el pie de página -->
+  <footer class="pie">
+    <div class="pie__interior">
+      <div class="pie__marca">
+        <a class="logo" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="2.2" />
+            <circle cx="12" cy="5.6" r="1.7" />
+            <circle cx="12" cy="18.4" r="1.7" />
+            <circle cx="5.6" cy="12" r="1.7" />
+            <circle cx="18.4" cy="12" r="1.7" />
+          </svg>
+          <span>La fe en Dios</span>
+        </a>
+        <p>Un espacio sereno para fortalecer la fe, leer la Palabra con calma y caminar acompañados. Sin prisa, un día a la vez.</p>
+      </div>
+
+      <nav aria-label="Navegación del pie">
+        <h2>Explorar</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reflexion.html">Reflexiones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="pie__escribir">
+        <h2>Escribir</h2>
+        <p>¿Necesitas oración o quieres compartir algo? Tu mensaje se lee con cuidado y en privado.</p>
+        <a href="contacto.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+          Enviar un mensaje
+        </a>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p>&copy; 2026 La fe en Dios. Todos los derechos reservados.</p>
+      <p>Citas bíblicas tomadas de la versión Reina-Valera 1960.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

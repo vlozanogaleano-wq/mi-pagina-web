@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reflexión | La fe en Dios</title>
+  <meta name="description" content="Reflexiones breves, con un versículo para llevar. Fe, esperanza, amor, oración, gratitud y duda.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="salto-contenido" href="#contenido">Saltar al contenido</a>
+
+  <!-- header: la cabecera, igual en las tres páginas -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="2.2" />
+          <circle cx="12" cy="5.6" r="1.7" />
+          <circle cx="12" cy="18.4" r="1.7" />
+          <circle cx="5.6" cy="12" r="1.7" />
+          <circle cx="18.4" cy="12" r="1.7" />
+        </svg>
+        <span>La fe en Dios</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reflexion.html" aria-current="page">Reflexión</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="cabecera__acciones">
+        <a class="boton boton--linea acciones-escritorio" href="contacto.html">Pedir oración</a>
+        <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú" data-menu-boton>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- section: presentación de la página -->
+    <div class="contenedor">
+      <div class="encabezado-pagina">
+        <p class="ceja">Reflexión</p>
+        <h1>La fe también se piensa, se duda y se vuelve a elegir.</h1>
+        <p>Textos breves para leer con calma, con un versículo para llevar contigo. Elige el tema que necesites hoy.</p>
+
+        <!-- Filtros: funcionan con teclado y anuncian su estado con aria-pressed -->
+        <div class="filtros" role="group" aria-label="Filtrar reflexiones por tema" data-filtros>
+          <button type="button" aria-pressed="true" data-filtro="Todos">Todos</button>
+          <button type="button" aria-pressed="false" data-filtro="Fe">Fe</button>
+          <button type="button" aria-pressed="false" data-filtro="Esperanza">Esperanza</button>
+          <button type="button" aria-pressed="false" data-filtro="Amor">Amor</button>
+          <button type="button" aria-pressed="false" data-filtro="Oración">Oración</button>
+          <button type="button" aria-pressed="false" data-filtro="Gratitud">Gratitud</button>
+          <button type="button" aria-pressed="false" data-filtro="Duda">Duda</button>
+        </div>
+
+        <p class="contador" aria-live="polite" id="contador">6 reflexiones</p>
+      </div>
+    </div>
+
+    <!-- section: cada reflexión se abre y se cierra sin necesidad de JavaScript -->
+    <section class="contenedor" aria-label="Reflexiones">
+      <div class="lista-reflexiones" data-lista>
+        <details class="reflexion" id="cuando-la-fe-se-siente-pequena" data-tema="Fe">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Fe</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                3 min
+              </span>
+            </span>
+            <h3>Cuando la fe se siente pequeña</h3>
+            <span class="reflexion__resumen">No hace falta una fe enorme para acercarse a Dios. A veces basta con decir: «Ayúdame a creer».</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«Creo; ayuda a mi incredulidad.»</p>
+              <cite>Marcos 9:24</cite>
+            </div>
+            <p>Hay días en que la fe no se siente como una certeza, sino como una pregunta. Nos despertamos, oramos y aun así el silencio parece más grande que nuestra confianza. En esos momentos es fácil pensar que algo anda mal con nosotros, que deberíamos creer con más fuerza.</p>
+            <p>El Evangelio cuenta la historia de un padre que se acerca a Jesús con su hijo enfermo. No llega con una fe impecable; llega con la verdad a cuestas: «Creo; ayuda a mi incredulidad». No es una frase de derrota, es una oración honesta. Y Jesús no lo rechaza por la parte débil de su fe.</p>
+            <p>La fe no se mide por lo que sentimos, sino por aquello a lo que nos acercamos. Una fe pequeña puesta en Dios es distinta de una fe grande puesta en uno mismo. Lo importante no es el tamaño de tu confianza, sino la dirección de tu paso.</p>
+            <p>Si hoy te cuesta creer, no te culpes. Trae tu duda como traes tu cansancio. Dios no se ofende con las preguntas sinceras; muchas veces son la puerta por la que entra la fe.</p>
+            <p>Empieza por algo pequeño: una oración breve, un versículo leído despacio, una mano que se abre. La fe también se ejercita, y cada día ordinario es una oportunidad para volver a empezar.</p>
+          </div>
+        </details>
+
+        <details class="reflexion" id="esperar-sin-saber-cuando" data-tema="Esperanza">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Esperanza</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                4 min
+              </span>
+            </span>
+            <h3>Esperar sin saber cuándo</h3>
+            <span class="reflexion__resumen">La esperanza bíblica no promete respuestas rápidas. Promete que la misericordia llega antes que el sol.</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«Por la misericordia de Jehová no hemos sido consumidos… nuevas son cada mañana.»</p>
+              <cite>Lamentaciones 3:22-23</cite>
+            </div>
+            <p>Esperar es una de las cosas más difíciles que hacemos. No el esperar con una fecha en el calendario, sino ese esperar que se alarga sin señales y sin explicaciones. La enfermedad que sigue, la respuesta que no llega, el hijo que todavía no vuelve a casa.</p>
+            <p>El profeta que escribió Lamentaciones no estaba en un buen momento. Hablaba desde una ciudad destruida, mirando ruinas. Y precisamente ahí escribe que la misericordia de Dios se renueva cada mañana. No dice que el dolor desapareció; dice que la misericordia llegó primero.</p>
+            <p>La esperanza cristiana no es optimismo. El optimismo afirma que todo saldrá bien; la esperanza afirma que Dios está presente aunque no todo salga bien. Es una confianza que puede convivir con el llanto, y que no necesita entender el final para sostener el presente.</p>
+            <p>Quizá hoy tu tarea no es resolver el futuro, sino sostener este día. Comer, descansar, pedir ayuda, orar con las palabras que tengas. La esperanza se construye en porciones pequeñas, como el maná: suficiente para hoy.</p>
+            <p>Si estás en medio de la espera, recuerda que no estás solo en ella. Dios no siempre llega como imaginamos, pero nunca llega tarde de la manera en que llega. Y mientras esperas, tu fidelidad silenciosa ya es una forma de adoración.</p>
+          </div>
+        </details>
+
+        <details class="reflexion" id="amar-cuando-cuesta" data-tema="Amor">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Amor</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                3 min
+              </span>
+            </span>
+            <h3>Amar cuando cuesta</h3>
+            <span class="reflexion__resumen">El amor del que habla la Biblia no es un sentimiento que aparece, sino una decisión que se repite.</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«El amor es sufrido, es benigno; el amor no tiene envidia… todo lo soporta.»</p>
+              <cite>1 Corintios 13:4-7</cite>
+            </div>
+            <p>Cuando pensamos en el amor, pensamos en lo que sentimos. La Biblia, en cambio, habla de lo que hacemos: ser paciente, no guardar rencor, soportar. Es una descripción tan concreta que incomoda, porque no depende del otro, sino de nosotros.</p>
+            <p>Amar cuando cuesta no significa permitir el daño ni quedarse en una relación que lastima. Significa elegir la forma del amor incluso cuando la emoción no acompaña: responder con calma, decir la verdad con ternura, poner límites sin desear el mal.</p>
+            <p>Jesús lo llevó al extremo: amó a quienes lo traicionaron y oró por quienes lo crucificaron. No para que sintamos culpa por no alcanzar esa medida, sino para mostrarnos hacia dónde camina el amor verdadero.</p>
+            <p>Hoy tal vez el amor consista en una llamada que no quieres hacer, en un perdón que todavía duele, en un silencio que evita herir. No es poca cosa. Lo pequeño hecho con amor tiene un peso que no siempre vemos.</p>
+            <p>Y antes de amar a otros, recuerda que también eres amado. No puedes dar de un pozo vacío. Deja que Dios te ame primero, con tus límites y tu historia, y el amor hacia los demás empezará a tener raíces.</p>
+          </div>
+        </details>
+
+        <details class="reflexion" id="orar-sin-palabras" data-tema="Oración">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Oración</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                3 min
+              </span>
+            </span>
+            <h3>Orar sin palabras</h3>
+            <span class="reflexion__resumen">No toda oración necesita un discurso. A veces basta con estar, incluso cuando no sabemos qué decir.</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«El Espíritu mismo intercede por nosotros con gemidos indecibles.»</p>
+              <cite>Romanos 8:26</cite>
+            </div>
+            <p>Hay temporadas en las que las palabras no salen. Queremos orar y solo encontramos cansancio, distracción o una lista de necesidades que ya repetimos muchas veces. Y entonces pensamos que no estamos orando bien.</p>
+            <p>Pablo escribe que el Espíritu intercede por nosotros con gemidos que no se pueden expresar. Es una imagen extraña y consoladora: incluso cuando no sabemos pedir, alguien está orando dentro de nosotros con un lenguaje que Dios entiende.</p>
+            <p>La oración no es un examen de elocuencia. Es presencia. El salmista escribe «estad quietos y conoced que yo soy Dios»; a veces lo más fiel que podemos hacer es sentarnos en silencio delante de Él, sin explicaciones.</p>
+            <p>Si hoy no puedes hablar, prueba esto: lee un salmo en voz baja, repite una sola frase —«Señor, ten misericordia»— o simplemente nombra lo que sientes, aunque sea «estoy cansado». La honestidad también es una forma de oración.</p>
+            <p>La oración sostenida no siempre cambia las circunstancias de inmediato, pero casi siempre cambia la forma en que las habitamos. Y eso ya es una respuesta.</p>
+          </div>
+        </details>
+
+        <details class="reflexion" id="gratitud-que-no-depende-del-dia" data-tema="Gratitud">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Gratitud</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                3 min
+              </span>
+            </span>
+            <h3>La gratitud que no depende del día</h3>
+            <span class="reflexion__resumen">Agradecer no es ignorar lo difícil. Es reconocer, en medio de lo difícil, lo que sigue siendo un regalo.</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros.»</p>
+              <cite>1 Tesalonicenses 5:18</cite>
+            </div>
+            <p>«Dad gracias en todo» es una frase fácil de citar y difícil de vivir. No dice «dad gracias por todo», como si el dolor fuera bueno. Dice «en todo»: en medio de la vida tal como es, también hay motivos para agradecer.</p>
+            <p>La gratitud es una forma de atención. Nos obliga a levantar la mirada de lo que falta y ver lo que sostiene: el pan de hoy, una conversación, un cuerpo que respira, alguien que se acordó de nosotros. No niega la pérdida; la coloca junto a lo que permanece.</p>
+            <p>En los salmos, la alabanza casi siempre aparece después del lamento, no en lugar de él. El creyente se queja con sinceridad y luego recuerda. Esa memoria es el músculo de la gratitud, y como todo músculo, se entrena.</p>
+            <p>Prueba un ejercicio sencillo antes de dormir: nombra tres cosas concretas del día y agradécelas en voz baja. No las grandes, las reales. Con el tiempo, la mirada cambia de dirección.</p>
+            <p>La gratitud no hace que los problemas desaparezcan. Hace que no ocupen todo el campo de visión. Y a veces eso es exactamente lo que necesitábamos.</p>
+          </div>
+        </details>
+
+        <details class="reflexion" id="dios-escucha-las-dudas" data-tema="Duda">
+          <summary>
+            <span class="reflexion__arriba">
+              <span class="etiqueta-tema">Duda</span>
+              <span class="minutos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                4 min
+              </span>
+            </span>
+            <h3>Dios también escucha las dudas</h3>
+            <span class="reflexion__resumen">La duda no es lo contrario de la fe; muchas veces es su compañera de camino. Lo contrario es la indiferencia.</span>
+            <span class="reflexion__mas"><span class="abrir">Leer</span><span class="cerrar">Cerrar</span> ↗</span>
+          </summary>
+
+          <div class="reflexion__cuerpo">
+            <div class="cita-versiculo">
+              <p>«No seas incrédulo, sino creyente.»</p>
+              <cite>Juan 20:27</cite>
+            </div>
+            <p>Tomás es recordado por una sola cosa: dudó. Pero vale la pena mirar la escena completa. Estaba con los demás, no se había ido. Dijo en voz alta lo que necesitaba para creer, y Jesús no lo reprendió: le mostró las manos.</p>
+            <p>La duda suele asustarnos porque la confundimos con la falta de amor a Dios. Sin embargo, dudar implica que todavía nos importa. El que nada espera, no pregunta. La pregunta es una forma de seguir en la conversación.</p>
+            <p>Hay dudas que nacen del dolor y dudas que nacen del estudio. Ambas merecen respeto. La fe no pide que apaguemos la cabeza, sino que no nos quedemos solos con las preguntas: leer, preguntar a alguien de confianza, orar sin fingir.</p>
+            <p>Si hoy estás en una temporada de oscuridad, no te exijas certezas que no tienes. Sostén lo pequeño: sigue viniendo, sigue leyendo, sigue hablando con Dios aunque sea para decirle que no entiendes. La fe también se sostiene con hilos.</p>
+            <p>Jesús no le pidió a Tomás que dejara de dudar antes de acercarse. Se acercó a él. Esa es la imagen que conviene guardar: Dios no espera a que tengamos todo resuelto para encontrarse con nosotros.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- section: versículos -->
+    <section class="seccion contenedor" aria-labelledby="versiculos">
+      <div class="separador" aria-hidden="true"></div>
+
+      <div class="titulo-seccion" style="margin-top: 3.5rem;">
+        <p class="ceja">Versículos</p>
+        <h2 id="versiculos">Palabras para llevar en el día.</h2>
+        <p>Frases breves para volver a ellas cuando necesites recordar que no caminas solo.</p>
+      </div>
+
+      <div class="versiculos">
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«Echa sobre Jehová tu carga, y él te sustentará.»</blockquote>
+          <figcaption>Salmo 55:22</figcaption>
+        </figure>
+
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«No temas, porque yo estoy contigo.»</blockquote>
+          <figcaption>Isaías 41:10</figcaption>
+        </figure>
+
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«Venid a mí todos los que estáis trabajados y cargados.»</blockquote>
+          <figcaption>Mateo 11:28</figcaption>
+        </figure>
+
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«Jehová está cerca de los quebrantados de corazón.»</blockquote>
+          <figcaption>Salmo 34:18</figcaption>
+        </figure>
+
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«Esfuérzate y sé valiente; no temas ni desmayes.»</blockquote>
+          <figcaption>Josué 1:9</figcaption>
+        </figure>
+
+        <figure class="versiculo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6M21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4" />
+          </svg>
+          <blockquote>«Deléitate asimismo en Jehová, y él te concederá las peticiones de tu corazón.»</blockquote>
+          <figcaption>Salmo 37:4</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer: el pie de página -->
+  <footer class="pie">
+    <div class="pie__interior">
+      <div class="pie__marca">
+        <a class="logo" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="2.2" />
+            <circle cx="12" cy="5.6" r="1.7" />
+            <circle cx="12" cy="18.4" r="1.7" />
+            <circle cx="5.6" cy="12" r="1.7" />
+            <circle cx="18.4" cy="12" r="1.7" />
+          </svg>
+          <span>La fe en Dios</span>
+        </a>
+        <p>Un espacio sereno para fortalecer la fe, leer la Palabra con calma y caminar acompañados. Sin prisa, un día a la vez.</p>
+      </div>
+
+      <nav aria-label="Navegación del pie">
+        <h2>Explorar</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="reflexion.html">Reflexiones</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="pie__escribir">
+        <h2>Escribir</h2>
+        <p>¿Necesitas oración o quieres compartir algo? Tu mensaje se lee con cuidado y en privado.</p>
+        <a href="contacto.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+          Enviar un mensaje
+        </a>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p>&copy; 2026 La fe en Dios. Todos los derechos reservados.</p>
+      <p>Citas bíblicas tomadas de la versión Reina-Valera 1960.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
